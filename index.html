@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Serviços</title>
+    <title>Home</title>
 </head>
 <body>
-    <header >
+    <header class="container" >
         <nav class="navbar navbar-light navbar-expand-md bg-light mt-3">
-            <a href="#">Mundial &lt/LAB&gt </a> 
+           <a href="#"> <img src="./img/logo.png" alt=""> </a> 
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,14 +32,43 @@
 
                 </li>
 
-                <li class="nav-item active"><a class="nav-link" href="./login.html">Login</a></li>
+                <li>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Login
+                  </button>
+                  
+                <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" method="post">
+                                <label for="text">Usuario</label>
+                                <input type="text">
+                                <label for="password">Senha</label>
+                                <input type="password">
+                                <input type="button" value="Entrar">
+                               </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </li>
             </ul>
         </div>
         </nav>
     </header>
     <section class="container">
         <div class="row">
-             <div><img src="./img/ti001.jpg" alt="Mulher em um CPD"></div>
+             <div><img src="./img/Home (2).png" alt="Mulher em um CPD"></div>
              <h1>Bem-vindo à Intranet de Tecnologia da Informação</h1>
              <div>
                <h2> Caros colegas de equipe,</h2>
