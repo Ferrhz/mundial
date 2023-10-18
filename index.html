@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="fixed-top box-shadow box-shadow navbar navbar-light navbar-expand-md bg-light">
+        <nav class="fixed-top box-shadow box-shadow navbar navbar-light navbar-expand-md bg-light px-5">
            <a href="#"> <img src="./img/logo.png" alt=""> </a> 
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,8 +26,7 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Redes e Topologia</a></li>
                   <li><a class="dropdown-item" href="#">Infraestrutura</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Base de Conhecimento</a></li>
+                  <li><a class="dropdown-item" href="./artigo.html">Base de Conhecimento</a></li>
                 </ul>
 
                 </li>
@@ -46,114 +45,155 @@
                         </div>
         </nav>
     </header>
-    <section class="container-fluid">
+    <section class="container text-center">
         <div class="row">
-             <div><img class="rounded mx-auto d-block" src="./img/Home (2).png" alt="Mulher em um CPD"></div>
-             
-             
-             <div>
-              <h1>Bem-vindo à Intranet de Tecnologia da Informação</h1>
-               <h2> Caros colegas de equipe,</h2>
+              
+            <div class=" p-0">
+                <div id="carouselTc" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselTc" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselTc" data-slide-to="1"></li>
+                    <li data-target="#carouselTc" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/sl001.png" alt="California">
+                      <div class="carousel-caption">
+                        <h3 class="display-4"></h3>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/sl002.png" alt="California">
+                      <div class="carousel-caption">
+                        <h3 class="display-4"></h3>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/sl003.png" alt="California">
+                      <div class="carousel-caption">
+                        <h3 class="display-4"></h3>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselTc" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselTc" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                  </a>
+                </div>
+            </div>
+            </div>
+             <div class="my-lg-3 py-5">
+              <h1 id="apre" class="display-4">Bem-vindo à Intranet T.I Mundial</h1>
+               <h2 class="pb-3"> Caros colegas de equipe,</h2>
                 <p>É com grande entusiasmo que apresentamos a nossa nova Intranet de Tecnologia da Informação (TI).
                 Esta plataforma foi cuidadosamente desenvolvida para servir como um recurso centralizado e acessível a todos os membros da nossa equipe de TI.
                  Neste espaço, você encontrará informações essenciais sobre a nossa infraestrutura, topologia de rede e artigos detalhados de instalação.
                   Vamos explorar o que esta intranet tem a oferecer:
                 </p>
              </div>
-            
         </div>
     </section>
 
-    <section class="container-fluid" >
-        <div class="row">
-        <div class="mt-5">
-            <h2>Topologia de Rede:</h2>
-        <div class="row align-items-center">
-          
-     <div class="col-sm">
-        <img src="./img/topologia001.JPG" alt="">
-     </div>
-     
-     <div class="col-sm">
+   <section class="bg-light py-5">
+    <div class="container text-center">
+    <div class="row">
+
+    <div class="col-xl-4">
+      <div style="height: 100px;" class="d-flex justify-content-center">
+      <img src="./img/icon/internet.png" alt="">
+    </div>
+
+      <h2>Topologia de Rede:</h2>
+      <div>
         <p>
-            Aqui, você terá acesso a uma descrição completa da nossa topologia de rede,
-             incluindo informações sobre como os diferentes componentes estão interconectados.
-             Esta seção é crucial para que todos compreendam a estrutura da nossa rede,
-              o que é fundamental para garantir um funcionamento eficaz e seguro dos sistemas.
+          Aqui, você terá acesso a uma descrição completa da nossa topologia de rede, incluindo informações sobre como os diferentes componentes estão interconectados.
+           Esta seção é crucial para que todos compreendam a estrutura da nossa rede, o que é fundamental para garantir um funcionamento eficaz e seguro dos sistemas.
         </p>
-     </div>
+      </div>
+      <div class="m-3">
+      <a href="#" class="btn btn-primary btn-sm"> Topologia de rede</a>
     </div>
+    </div>
+     
+    <div class="col-xl-4">
+      <div  style="height: 100px;" class="d-flex justify-content-center">
+      <img src="./img/icon/article.png" alt="">
+    </div>
+      <h2>Artigos e Instalação:</h2>
+
+      <div>
+        <p>
+          Para facilitar o trabalho de todos os membros da equipe, disponibilizamos uma vasta coleção de artigos de instalação. Esses recursos detalhados guiarão você através de processos de instalação de software, configuração de hardware e procedimentos de manutenção.
+           Eles são projetados para serem um recurso prático, economizando tempo e esforço em projetos de implementação.
+        </p>
+      </div>
+      <div class="m-3">
+      <a href="#" class="btn btn-primary btn-sm"> Artigos e Instalação</a>
+    </div>
+    </div>
+
+
+    <div class="col-xl-4">
+      <div style="height: 100px;" class="d-flex justify-content-center">
+      <img src="./img/icon/infrastructure.png" alt="">
+    </div>
+      <h2>Infraestrutura de TI:</h2>
+
+      <div>
+        <p>
+          Nesta área, detalhamos todos os aspectos da nossa infraestrutura de TI. Isso inclui servidores, armazenamento, sistemas operacionais e muito mais. 
+          Você encontrará informações sobre as especificações técnicas, locais físicos e virtuais, bem como detalhes sobre políticas de segurança e backup.
+        </p>
+      </div>
+      <div class="m-3">
+      <a href="#" class="btn btn-primary btn-sm"> Infraestrutura</a>
+    </div>
+    </div>
+
+    </div>
+
   </div>
-</div>
-</section>
+   </section>
 
+   <section id="seguranca" class="p-md-5">
+    <div class="text-white text-center">
+    <p class="h5">
+      <em>
+       Lembramos que a segurança das informações é de extrema importância.
+       A Intranet de TI é protegida por autenticação rigorosa para garantir que apenas
+       os membros autorizados tenham acesso a informações confidenciais.
+      Agradecemos a todos os envolvidos no desenvolvimento desta Intranet de TI
+       e estamos empolgados com a oportunidade de fortalecer nossa colaboração e conhecimento técnico por meio desta plataforma.
+      </em>
+    </p>
 
+    <p class="h6">
+      <em>
+      Se você tiver alguma dúvida ou sugestão sobre como melhorar a Intranet, 
+      não hesite em entrar em contato com a equipe de administração.
+    </em>
+    </p>
+  </div>
+   </section>
 
-
-     <div  class="row">
-        <div class="col-6">
-            <img src="./img/infra001.JPG" alt="">
+    <footer class=" bg-dark text-white align-items-center p-3 ">
         
-        <h2>Infraestrutura de TI:</h2>
-        <div>
-           <p>Nesta área, detalhamos todos os aspectos da nossa infraestrutura de TI. Isso inclui servidores, armazenamento, 
-            sistemas operacionais e muito mais. 
-            Você encontrará informações sobre as especificações técnicas, 
-            locais físicos e virtuais, bem como detalhes sobre políticas de segurança e backup.</p>
-        </div>
+
+    <div class="container text-center">
+      <div class="row">
+        <p class="h5 lead"> &reg Mundial Calçados</p>
+      </div>
     </div>
-    </div>
-</div>
-
-    
-   
-
-   
-        <div>
-            <div>
-                <img src="./img/infra001.JPG" alt="">
-            </div>
-            <h2>Infraestrutura de TI:</h2>
-            <div>
-               <p>Nesta área, detalhamos todos os aspectos da nossa infraestrutura de TI. Isso inclui servidores, armazenamento, 
-                sistemas operacionais e muito mais. 
-                Você encontrará informações sobre as especificações técnicas, 
-                locais físicos e virtuais, bem como detalhes sobre políticas de segurança e backup.</p>
-            </div>
-        </div>
-
-
-    <section class="container">
-        <div>
-        <div><img src="" alt=""></div>
-        <h2>Artigos de Instalação: </h2>
-        <div>
-           <p>Para facilitar o trabalho de todos os membros da equipe, 
-            disponibilizamos uma vasta coleção de artigos de instalação. Esses recursos detalhados guiarão você através de processos de instalação de software,
-             configuração de hardware e procedimentos de manutenção.
-              Eles são projetados para serem um recurso prático, economizando tempo e esforço em projetos de implementação.
-
-           </p>
-        </div>
-    </div>
-    </section>
-
-    <footer>
-        <p>Lembramos que a segurança das informações é de extrema importância. 
-            A Intranet de TI é protegida por autenticação rigorosa para garantir
-             que apenas os membros autorizados tenham acesso a informações confidenciais.
-            </p>
-
-            <p>
-                Agradecemos a todos os envolvidos no desenvolvimento desta Intranet de TI e estamos
-                 empolgados com a oportunidade de fortalecer nossa colaboração e conhecimento técnico por meio desta plataforma.
-                 Se você tiver alguma dúvida ou sugestão sobre como melhorar a Intranet, não hesite em entrar em contato com a equipe de administração.
-            </p>
 
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./js/app.js"></script>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
