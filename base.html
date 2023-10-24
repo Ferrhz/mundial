@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,44 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Home</title>
+    <title>Serviços</title>
 </head>
 <body>
-   
-  <!-- Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="tituloLogin" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="tituloLogin">Entre na sua conta</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">E-mail</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">Digite seu e-mail</small>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Senha</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Lembrar senha</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Entrar</button>
-        </form>
-      </div>
-      
-    </div>
-  </div>
-</div>
-    <!-- Fecha Modal -->
-
     <header>
         <nav class="fixed-top box-shadow box-shadow navbar navbar-light navbar-expand-md bg-light px-5">
            <a href="#"> <img src="./img/logo.png" alt=""> </a> 
@@ -63,16 +29,21 @@
                   <li><a class="dropdown-item" href="#">Infraestrutura</a></li>
                   <li><a class="dropdown-item" href="./artigo.html">Base de Conhecimento</a></li>
                 </ul>
-               </li>
-               <li>
-                <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#loginModal">
+
+                </li>
+
+                <li>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Login
                   </button>
-                </li>
-            </ul>
-
-                
                   
+                <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
         </nav>
     </header>
     <section class="container text-center">
@@ -115,44 +86,90 @@
                   </a>
                 </div>
             </div>
+        <div class="my-lg-3 py-5">
+            <h1 class="display-4">Colaboração e Compartilhamento de Conhecimento:</h2>
+           <p>A Intranet de TI não é apenas uma fonte estática de informações, mas também um espaço de colaboração. 
+            Encorajamos todos os membros da equipe a compartilhar suas próprias experiências, 
+            insights e melhores práticas aqui. Isso nos ajudará a aprender uns com os outros e a melhorar constantemente nossos processos e habilidades.
+          </p>
+        </div>
+        </div>
+    </section>
+    <section class="container">
+
+        <h2 class="text-center pb-5">Base de conhecimento</h2>
+
+        <div  class="row  justify-content-end ">
+
+
+            
+            <div class="col-8 py-2 risco">
+                <h3>Manual Use</h3>
             </div>
-             
+            <div class="col-4">
+                <a class="btn btn-primary btn-sm" href=""> Baixar</a>
+            </div>
+        
+            
+            
+            <div class="col-8 py-2 risco">
+                <h3>Manual Relógio de ponto</h3>
+            </div>
+            <div class="col-4">
+                <a class="btn btn-primary btn-sm" href=""> Baixar</a>
+            </div>
+       
+
+        
+
+
+        
+            <form class="form-inline py-5 row">
+                <div class="form-group mb-2 col-8 ">
+                  <label class="sr-only" for="exampleFormControlFile1">Upload</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                 
+                <div class="form-group mx-sm-3 mb-2 col-4">
+                    <label for="inputPassword2" class="sr-only">Titulo</label>
+                    <input type="password" class="form-control" id="inputPassword2" placeholder="Titulo">
+                    
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-sm mb-2">Enviar</button>
+                  
+
+              </form>
+            </div>
+        
+
     </section>
-    <section class="container text-center">
-
-        <h3>Ingressando no AD</h3>
-        <iframe width="460" height="300" src="https://www.youtube.com/embed/KIGHvVeyNOw?si=xsCzwFCKQzSoMqv-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-    </section>
-  
-
-   <footer id="seguranca" class="text-white">
-    <div class=" container py-5">
-    <p class="h5">
-      <em>
-       Lembramos que a segurança das informações é de extrema importância.
-       A Intranet de TI é protegida por autenticação rigorosa para garantir que apenas
-       os membros autorizados tenham acesso a informações confidenciais.
-      Agradecemos a todos os envolvidos no desenvolvimento desta Intranet de TI
-       e estamos empolgados com a oportunidade de fortalecer nossa colaboração e conhecimento técnico por meio desta plataforma.
-      </em>
-    </p>
-
-    <p class="h6">
-      <em>
-      Se você tiver alguma dúvida ou sugestão sobre como melhorar a Intranet, 
-      não hesite em entrar em contato com a equipe de administração.
-    </em>
-    </p>
-  </div>      
-
-   
-      <div class="bg-dark  text-center py-3">
-        <p class="h5 lead"> Mundial Calçados &copy Alguns direitos reservados </p>
-      </div>
-   
-
-    </footer>
+    <footer id="seguranca" class="text-white">
+        <div class=" container py-5">
+        <p class="h5">
+          <em>
+           Lembramos que a segurança das informações é de extrema importância.
+           A Intranet de TI é protegida por autenticação rigorosa para garantir que apenas
+           os membros autorizados tenham acesso a informações confidenciais.
+          Agradecemos a todos os envolvidos no desenvolvimento desta Intranet de TI
+           e estamos empolgados com a oportunidade de fortalecer nossa colaboração e conhecimento técnico por meio desta plataforma.
+          </em>
+        </p>
+    
+        <p class="h6">
+          <em>
+          Se você tiver alguma dúvida ou sugestão sobre como melhorar a Intranet, 
+          não hesite em entrar em contato com a equipe de administração.
+        </em>
+        </p>
+      </div>      
+    
+       
+          <div class="bg-dark  text-center py-3">
+            <p class="h5 lead"> Mundial Calçados &copy Alguns direitos reservados </p>
+          </div>
+       
+    
+        </footer>
 
     <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
@@ -160,3 +177,5 @@
     <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
+
+

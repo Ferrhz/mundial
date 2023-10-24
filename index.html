@@ -8,6 +8,41 @@
     <title>Home</title>
 </head>
 <body>
+   
+  <!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="tituloLogin" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloLogin">Entre na sua conta</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">E-mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">Digite seu e-mail</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Lembrar senha</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    <!-- Fecha Modal -->
+
     <header>
         <nav class="fixed-top box-shadow box-shadow navbar navbar-light navbar-expand-md bg-light px-5">
            <a href="#"> <img src="./img/logo.png" alt=""> </a> 
@@ -28,21 +63,16 @@
                   <li><a class="dropdown-item" href="#">Infraestrutura</a></li>
                   <li><a class="dropdown-item" href="./artigo.html">Base de Conhecimento</a></li>
                 </ul>
-
-                </li>
-
-                <li>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+               </li>
+               <li>
+                <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#loginModal">
                     Login
                   </button>
+                </li>
+            </ul>
+
+                
                   
-                <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
         </nav>
     </header>
     <section class="container text-center">
