@@ -1,33 +1,36 @@
-body{
+body {
     height: 100%;
     padding-top: 75px;
 }
-.box-shadow{
-    box-shadow: 0 2px 4px 0 rgba(0,0,0, .05),
-                0 4px 8px 0 rgba(0,0,0, .05);
+
+.box-shadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05),
+        0 4px 8px 0 rgba(0, 0, 0, .05);
 }
 
-.p{
+.p {
     font-size: 1.2rem;
 }
 
-#seguranca{
+#seguranca {
     background: url('../img/seguranca.jpeg') center center;
     background-size: cover;
 }
 
-@media (max-width: 767px){
-    .display-4{
+@media (max-width: 767px) {
+    .display-4 {
         font-size: 3rem;
     }
-    body{
-       padding: 0px;
+
+    body {
+        padding: 0px;
     }
-    .fixed-top{
+
+    .fixed-top {
         position: relative;
     }
 }
 
-.risco{
-    border-bottom: 1px solid rgba(0, 0, 0, .2) ;
+.risco {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
