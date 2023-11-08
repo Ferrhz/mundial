@@ -62,7 +62,7 @@
                   <li><a class="dropdown-item" href="#">Redes e Topologia</a></li>
                   <li><a class="dropdown-item" href="#">Infraestrutura</a></li>
                   <li><a class="dropdown-item" href="">Base de Conhecimento</a></li>
-                  <li><a class="dropdown-item" href="/artigo">Artigos</a></li>
+                  <li><a class="dropdown-item" href="/artigos">Artigos</a></li>
                 </ul>
                </li>
                <li>
@@ -130,48 +130,37 @@
     <section class="container ">
         <div class="row text-center">
 
-                
+          <% for(let artigo of artigoM) { %>       
         <div class="col-12 py-5">
-        <h3>Ingressando no AD</h3>
-        <iframe width="460" height="300" src="https://www.youtube.com/embed/bCJPmdsBcLs?si=7HZJRtayukAlSBXE"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         <p class="lead">Esse video vai te ajudar a ingressar equipamentos com S.O windows no dominio.</p>
+        <h3><%= artigo.tituloArtigo %></h3>
+        <iframe width="460" height="300" src="<%= artigo.linkArtigo  %>"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p class="lead"><%= artigo.descricaoTitulo %></p>
         </div>
-
-        <div class="col-12 py-5">
-            <h3>Dicas do USE</h3>
-            <iframe width="460" height="300" src="https://www.youtube.com/embed/Y1XbBjWHam0?si=XCfP5FZuh6g3PsP2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-             <p class="lead">Algumas dicas do Pré-venda</p>
-            </div>
-
-            <div class="col-12 py-5">
-                <h3>Analista de Help Desk</h3>
-                <iframe width="460" height="300" src="https://www.youtube.com/embed/BaKLrqfGpmY?si=9gExnmurJ38slluF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                 <p class="lead">Como funciona a profissão de Analista de Help Desk?</p>
-                </div>
-
-               
+        <%  } %>
+        
 
         </div>
     </section>
 
     <section class="container  py-3">
-      <form class="form-inline ">
-        <label class="sr-only" for="tituloVideo">Titulo</label>
-        <input type="text" class="form-control mb-2 mr-sm-2" id="tituloVideo" placeholder="Digite o titulo do video">
+      <form class="form-inline " action="/artigos" method="POST" >
+        <label class="sr-only" for="tituloArtigo">Titulo</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="tituloArtigo" placeholder="Digite o titulo do video">
       
-        <label class="sr-only" for="linkVideo">Link</label>
+        <label class="sr-only" for="linkArtigo">Link</label>
         <div class="input-group mb-2 mr-sm-2">
-          <input type="text" class="form-control" id="linkVideo" placeholder="Digite o link">
+          <input type="text" class="form-control" id="linkArtigo" placeholder="Digite o link">
         </div>
         
       
         <button type="submit" class="btn btn-primary mb-2">Submit</button>
-
+    
+        <div class="">
+          <textarea name="descricaoTitulo" id="descricaoTitulo" cols="100%" rows="2" placeholder="Digite uma breve descrição para video..."></textarea>
+        </div>
       
       </form>
-      <div class="">
-        <textarea name="breveTexto" id="breveTexto" cols="100%" rows="2" placeholder="Digite uma breve descrição para video..."></textarea>
-      </div>
+      
     </section>
 
   <footer id="seguranca" class="text-white">
