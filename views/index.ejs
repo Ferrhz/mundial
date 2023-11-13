@@ -1,76 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/bootstrap.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="shortcut icon" href="/img/favicon/favicon.ico">
-  <title>Mundial LAB</title>
-</head>
+<%- include('./partials/header.ejs') %>
+<title>Mundial LAB - Home</title>
 
 <body>
   <!-- Modal -->
-  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="tituloLogin" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="tituloLogin">Entre na sua conta</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">E-mail</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">Digite seu e-mail</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Senha</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Lembrar senha</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Entrar</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+  <%- include('./partials/modal.ejs') %>
   <!-- Fecha Modal -->
-  <header>
-    <nav class="fixed-top box-shadow box-shadow navbar navbar-light navbar-expand-md bg-light px-5">
-      <a href="#"> <img src="./img/logo.png" alt=""> </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link  dropdown-toggle" data-toggle="dropdown" href="#" role="button" id="navbarDropdown"
-              aria-expanded="false" href="">Serviços</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Redes e Topologia</a></li>
-              <li><a class="dropdown-item" href="#">Infraestrutura</a></li>
-              <li><a class="dropdown-item" href="./base.html">Base de Conhecimento</a></li>
-              <li><a class="dropdown-item" href="/artigos">Artigos</a></li>
-            </ul>
-          </li>
-          <li>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
-              Login
-            </button>
-          </li>
-        </ul>
-    </nav>
-  </header>
+  <%- include('./partials/navbar.ejs') %>
+
   <section class="container text-center">
     <div class="row">
       <div class=" p-0">
@@ -160,7 +99,7 @@
           </div>
           <div class="m-3">
             <a href="#" class="btn btn-primary btn-sm  btn-block"> Manual de Instalação</a>
-            <a href="#" class="btn btn-primary btn-sm  btn-block"> Artigos </a>
+            <a href="/artigos" class="btn btn-primary btn-sm  btn-block"> Artigos </a>
           </div>
         </div>
         <div class="col-xl-4">
@@ -183,32 +122,6 @@
       </div>
     </div>
   </section>
-  <footer id="seguranca" class="text-white">
-    <div class=" container py-5">
-      <p class="h5">
-        <em>
-          Lembramos que a segurança das informações é de extrema importância.
-          A Intranet de TI é protegida por autenticação rigorosa para garantir que apenas
-          os membros autorizados tenham acesso a informações confidenciais.
-          Agradecemos a todos os envolvidos no desenvolvimento desta Intranet de TI
-          e estamos empolgados com a oportunidade de fortalecer nossa colaboração e conhecimento técnico por meio desta
-          plataforma.
-        </em>
-      </p>
-      <p class="h6">
-        <em>
-          Se você tiver alguma dúvida ou sugestão sobre como melhorar a Intranet,
-          não hesite em entrar em contato com a equipe de administração.
-        </em>
-      </p>
-    </div>
-    <div class="bg-dark  text-center py-3">
-      <p class="h5 lead"> Mundial Calçados &copy Alguns direitos reservados </p>
-    </div>
-  </footer>
-  <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
+  <%- include('./partials/footer.ejs') %>
 </body>
 </html>
