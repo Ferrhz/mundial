@@ -58,8 +58,9 @@ app.post('/salvarpergunta', (req, res) =>{
 });
 
 
-  
-   
+app.get('/basedeconhecimento', (req, res) =>{
+    res.render("base")
+})
 
 
 
